@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git chekout') {
+            steps {
+                echo 'تم الحصول على الكود من git Hub  بنجاح '
+            }
+        }
+        stage('Build chekout') {
+            steps {
+                echo 'checkout Complete "Build Test"'
+            }
+        }
+        stage('Test chekout') {
+            steps {
+                echo 'checkout Complete "Test Test"'
+                sh "date"
+            }
+        }
+    }
+}
+
